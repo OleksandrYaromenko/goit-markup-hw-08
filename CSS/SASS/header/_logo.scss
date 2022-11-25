@@ -1,0 +1,16 @@
+.header__logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+  margin-right: 0px;
+  text-decoration: none;
+  font-family: var(--type-footer-logo);
+  font-size: 26px;
+  line-height: 1.191;
+  color: var(--black-color);
+  
+  &--web {
+    color: var(--blue-color);
+  }
+}
+

@@ -1,0 +1,43 @@
+.contacts {
+  list-style: none;
+  font-weight: 500;
+  display: none;
+  margin: 0 0 0 auto;
+  gap: 30px;
+  @media (min-width: 768px) {
+    display: block;
+  }
+  @media (min-width: 780px) {
+    display: block;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+  &__svg {
+    margin-right: 10px;
+    fill: var(--gray-color);
+  }
+  &__img {
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.142;
+    color: var(--gray-color);
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--time-hover);
+    &:hover {
+      color: var(--blue-color);
+    }
+    &:hover .contacts__svg {
+      fill: var(--blue-color);
+    }
+  }
+}

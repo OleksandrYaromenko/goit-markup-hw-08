@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 0.875;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--team-icon-color);
+    background-color: var(--footer-icon-background);
+    transition: fill, background-color 250ms var(--time-hover);
+  }
+  &__icon:hover {
+    fill: var(--white-color);
+    background-color: var(--blue-color);
+  }
+}

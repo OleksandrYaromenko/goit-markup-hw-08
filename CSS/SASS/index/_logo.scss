@@ -1,0 +1,20 @@
+.logo__icon {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--team-icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  fill: var(--team-icon-color);
+  transition: border-color, fill 250ms var(--time-hover);
+  @media (min-width: 480px){
+    width: calc((100% - 30px)/2);
+  }
+   @media (min-width: 768px){
+    width: calc((100% - 60px)/3)
+   }
+  
+  &:hover {
+    border-color: var(--blue-color);
+    fill: var(--blue-color);
+  }
+}

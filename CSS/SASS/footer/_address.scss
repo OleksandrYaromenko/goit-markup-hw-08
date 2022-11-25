@@ -1,0 +1,40 @@
+.address {
+  padding-top: 20px;
+  // padding-right: 70px;
+
+  &__logo {
+    display: block;
+    font-style: normal;
+    list-style: none;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-family: var(--type-footer-logo);
+    font-size: 26px;
+    line-height: 1.191;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+  }
+  &__web {
+    color: var(--blue-color);
+  }
+  &__list {
+    list-style: none;
+    padding-bottom: 60px;
+    &--adres {
+      font-style: normal;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.71;
+      color: var(--footer-mail-tel-color);
+      letter-spacing: 0.03em;
+      transition: color 250ms var(--time-hover);
+    }
+    &--adres:hover,
+    &--contacts:hover {
+      color: var(--blue-color);
+    }
+  }
+}
+.place{
+  color:var(--white-color);
+}

@@ -1,0 +1,38 @@
+.benefits {
+  list-style: none;
+  display: block;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+   @media (min-width: 768px) {
+      display: flex;
+  &__list {
+      flex-basis: calc((100% - 60px) / 2);
+    }
+    @media (min-width: 1200px) {
+      flex-wrap: inherit;
+    }
+  }
+  &__icons {
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.142;
+    color: var(--black-color);
+    letter-spacing: 0.03em;
+  }
+  &__paragraph {
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--gray-color);
+    letter-spacing: 0.03em;
+  }
+}

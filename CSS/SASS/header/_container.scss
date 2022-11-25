@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+  &__position {
+    flex-grow: 3;
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+}

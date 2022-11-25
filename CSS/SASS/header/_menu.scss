@@ -1,0 +1,141 @@
+.menu {
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  border: none;
+  outline: none;
+  background-color: var(--white-color);
+  &:active {
+    fill: var(--blue-color);
+  }
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+ 
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+    padding: 40px;
+    background-color: var(--white-color);
+    z-index: 999;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &__icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    margin: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    transition: background-color, fill 250ms var(--time-hover);
+    &:active {
+      fill: var(--blue-color);
+    }
+   
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &__nav {
+    max-width: 480px;
+    max-height: 796px;
+  }
+}
+.mobile {
+  &__list {
+    padding-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: var(--black-color);
+    text-decoration: none;
+    &:active {
+      color: var(--blue-color);
+    }
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &__contacts {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+    text-decoration: none;
+    &:active {
+      color: var(--blue-color);
+    }
+ 
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &__magin {
+    margin-top: 270px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+    &--list {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
+      &:last-child {
+        border: none;
+      }
+    }
+    &--link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: var(--blue-color);
+    }
+  }
+}
