@@ -482,11 +482,23 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--team-color-fon)), to(var(--team-color-fon))), url(../images/team-worling-mobail2x.jpg);
+    background-image: linear-gradient(to right, var(--team-color-fon), var(--team-color-fon)), url(../images/team-worling-mobail2x.jpg);
+  }
+}
 @media (min-width: 768px) {
   .title {
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--team-color-fon)), to(var(--team-color-fon))), url(../images/team-worling-tablet.jpg);
     background-image: linear-gradient(to right, var(--team-color-fon), var(--team-color-fon)), url(../images/team-worling-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--team-color-fon)), to(var(--team-color-fon))), url(../images/team-worling-tablet2x.jpg);
+    background-image: linear-gradient(to right, var(--team-color-fon), var(--team-color-fon)), url(../images/team-worling-tablet2x.jpg);
   }
 }
 @media (min-width: 1200px) {
@@ -495,6 +507,12 @@ img {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--team-color-fon)), to(var(--team-color-fon))), url(../images/team-worling.jpg);
     background-image: linear-gradient(to right, var(--team-color-fon), var(--team-color-fon)), url(../images/team-worling.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--team-color-fon)), to(var(--team-color-fon))), url(../images/team-worling2x.jpg);
+    background-image: linear-gradient(to right, var(--team-color-fon), var(--team-color-fon)), url(../images/team-worling2x.jpg);
   }
 }
 .title__h {
