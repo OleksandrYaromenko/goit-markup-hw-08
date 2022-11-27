@@ -10,8 +10,11 @@
    @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+  }
+  @media (min-width: 1200px){
+    text-align: none;
   }
 }
 .footer__title {
