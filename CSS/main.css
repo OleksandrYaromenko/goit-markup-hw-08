@@ -839,7 +839,8 @@ img {
   }
 }
 .mailing__email {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -851,9 +852,14 @@ img {
   border-radius: 4px;
   color: var(--white-color);
 }
+@media (min-width: 768px) {
+  .mailing__email {
+    width: 450px;
+  }
+}
 @media (min-width: 1200px) {
   .mailing__email {
-    margin: 0 auto;
+    margin: 0 12px 0 94px;
     width: 358px;
   }
 }
@@ -906,6 +912,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .mag93px {
+    margin-left: 94px;
+  }
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -936,7 +948,10 @@ img {
 }
 @media (min-width: 1200px) {
   .container-footer {
-    text-align: none;
+    text-align: inherit;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
