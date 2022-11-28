@@ -1,5 +1,4 @@
 .menu {
-  
   @media (min-width: 768px) {
     display: none;
   }
@@ -19,7 +18,7 @@
     overflow-y: auto;
     width: 100%;
     height: 100%;
- 
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -56,7 +55,7 @@
     &:active {
       fill: var(--blue-color);
     }
-   
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -65,6 +64,10 @@
     }
   }
   &__nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 480px;
     max-height: 796px;
   }
@@ -83,7 +86,7 @@
     &:active {
       color: var(--blue-color);
     }
-    
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -101,7 +104,7 @@
     &:active {
       color: var(--blue-color);
     }
- 
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -109,15 +112,12 @@
       display: none;
     }
   }
-  &__magin {
-    margin-top: 270px;
-  }
   &__social {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-   
+
     @media (min-width: 768px) {
       display: none;
     }
