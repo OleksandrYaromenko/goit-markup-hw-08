@@ -1,8 +1,10 @@
 .button {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+ 
   &__list {
     padding: 6px 22px;
     border-radius: 4px;

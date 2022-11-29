@@ -20,6 +20,7 @@
   &__img {
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
     @media (min-width: 1200px) {
       display: flex;
     }

@@ -3,8 +3,13 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   transition: opacity 250ms var(--time-hover);
+  // @media (min-width: 768px){
+  //  display: flex;
+  //  justify-content: ;
+  // }
 }
 
 .list {
